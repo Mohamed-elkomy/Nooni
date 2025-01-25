@@ -1,0 +1,14 @@
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    flex: 1;
+    margin-right: 10px; 
+}
+
+.search-icon {
+    width: 24px; 
+    height: 24px; 
+}
