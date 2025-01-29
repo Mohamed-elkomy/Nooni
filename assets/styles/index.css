@@ -34,7 +34,7 @@
 }
 /* header */
 .header {
-  background-color:rgb(242 242 242);
+  background-color: rgb(242 242 242);
   padding: 0 60px;
 }
 /* left */
@@ -154,150 +154,7 @@
   cursor: pointer;
 }
 /* hero section */
-.hero-section {
-  position: relative;
-  overflow: hidden;
-}
-/* SectionTop */
-.hero-section .section-top {
-  padding: 0 60px;
-  background-color: #ffffff;
-  /* position:fixed; */
-  z-index: 100;
-}
-/* left */
-.hero-section .section-top p a {
-  text-decoration: none;
-  font-size: 3rem;
-  color: #000000;
-  font-weight: 900;
-}
-.hero-section .section-top a span {
-  color: rgb(205, 2, 2);
-  font-size: 3.5rem;
-}
-/* Menu-None*/
-.hero-section .navbar .container-fluid p a span,
-.hero-section .offcanvas-header h5 span {
-  color: rgb(205, 2, 2);
-  font-size: 3rem;
-}
-.hero-section .section-top .menu-search a,
-.hero-section .navbar .container-fluid p a {
-  color: #000000;
-  text-decoration: none;
-  letter-spacing: 1px;
-  font-weight: 500;
-  transition: 0.2s ease;
-}
-/* Menu-None */
-.hero-section .navbar .container-fluid p a,
-.hero-section .offcanvas-header h5 {
-  color: #ffffff;
-  font-size: 2.5rem;
-  font-weight: 900;
-}
-.hero-section .section-top .menu-search a:hover {
-  color: rgb(160, 0, 0);
-}
-.hero-section .section-top .icon i {
-  color: #000000;
-  font-size: 1.3rem;
-}
-.hero-section .section-top .icon span {
-  background-color: rgb(205, 2, 2);
-  color: #ffffff;
-}
-.hero-section .section-top button i {
-  font-size: 1.3rem;
-}
-.hero-section .section-top .offcanvas {
-  padding: 20px;
-}
-.hero-section .section-top .offcanvas h5 {
-  color: #000000;
-  font-size: 1.1rem;
-  font-weight: 400;
-  letter-spacing: 1px;
-}
-.hero-section .section-top .offcanvas-body input {
-  width: 100%;
-  height: 50px;
-  padding: 15px 20px;
-  border: 1px solid #afafaf;
-}
-.hero-section .section-top .offcanvas-body input::placeholder {
-  color: #afafaf;
-}
-.hero-section .section-top .offcanvas-body {
-  position: relative;
-}
-.hero-section .section-top .offcanvas-body i {
-  position: absolute;
-  right: 35px;
-  top: 30px;
-  font-size: 1.1rem;
-  color: #000000;
-}
-/* Section bottom */
-.hero-section .section-bottom {
-  position: relative;
-}
-.hero-section .section-bottom .hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffffff;
-  text-transform: capitalize;
-}
-.hero-section .section-bottom .hero-text h1 {
-  font-size: 3rem;
-  margin: 0;
-  letter-spacing: 4px;
-}
-.hero-section .section-bottom .hero-text h6 {
-  letter-spacing: 2px;
-}
-.hero-section .section-bottom .hero-text p {
-  font-size: 1.5rem;
-  margin: 10px 0;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-  letter-spacing: 2px;
-}
-.hero-section .section-bottom .hero-text p span {
-  color: rgb(205, 2, 2);
-  font-size: 5rem;
-  font-weight: 900;
-}
-/* VideoNone */
-.hero-section .section-bottom .hero-text .video-icon {
-  width: 100px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* background-color: rgba(0, 0, 0, 0.3); */
-  border-radius: 50%;
-  cursor: pointer;
-}
-.hero-section .section-bottom .hero-text .video-icon svg {
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-}
-.hero-section .section-bottom .hero-text #myVideo {
-  width: 100%;
-  display: none;
-}
-/* VideoOriginal */
-.hero-section video {
-  width: 100%;
-  height: 95vh;
-  object-fit: cover;
-  object-position: center;
-  filter: contrast(140%) brightness(90%);
-}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -336,7 +193,6 @@
     transform: translateX(100%);
   }
 }
-/* End Hero Section */
 /* Start Shop Category */
 .shop-category {
   margin: 100px 60px 90px 60px;
@@ -424,7 +280,7 @@
 @media (min-width: 1400px) {
 }
 /* services */
-.services {
+/* .services {
   width: 100%;
   height: 100vh;
   margin: 50px 0 0;
@@ -512,7 +368,7 @@
 .services .hidden-box p {
   text-align: center;
   font-size: 0.8rem;
-}
+} */
 /* Services */
 /* Cabina */
 .section-two {
@@ -633,6 +489,55 @@
 .section-four {
   margin: 100px 60px 0 60px;
 }
+.section-four .text {
+  color: #000000;
+}
+.section-four .text p {
+  font-size: 3rem;
+  letter-spacing: 5px;
+  line-height: 1.3;
+}
+.section-four .text a {
+  color: #000000;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.section-four .product {
+  position: relative;
+}
+.section-four .product a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.section-four .product a p {
+  margin-top: 10px;
+}
+.section-four .product .price span {
+  font-weight: 700;
+}
+.section-four .product .price del {
+  color: rgb(199, 198, 198);
+}
+.section-four .product .position,
+.position-r,
+.pt {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #f2f2f2;
+  background-color: #848484;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+.section-four .product .pt {
+  left: 70px;
+}
+.section-four .product .position-r {
+  background-color: rgb(205, 2, 2);
+}
 .section-four img {
   width: 94%;
 }
@@ -640,7 +545,7 @@
   position: relative;
   transition: 3s ease;
 }
-/* None */
+
 .section-four .product button {
   background-color: white;
   position: absolute;
@@ -740,55 +645,7 @@
 }
 
 /* ------------ */
-.section-four .text {
-  color: #000000;
-}
-.section-four .text p {
-  font-size: 3rem;
-  letter-spacing: 5px;
-  line-height: 1.3;
-}
-.section-four .text a {
-  color: #000000;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  text-decoration: none;
-}
-.section-four .product {
-  position: relative;
-}
-.section-four .product a {
-  color: #000000;
-  text-decoration: none;
-  font-size: 1rem;
-}
-.section-four .product a p {
-  margin-top: 10px;
-}
-.section-four .product .price span {
-  font-weight: 700;
-}
-.section-four .product .price del {
-  color: rgb(199, 198, 198);
-}
-.section-four .product .position,
-.position-r,
-.pt {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  color: #f2f2f2;
-  background-color: #848484;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-}
-.section-four .product .pt {
-  left: 70px;
-}
-.section-four .product .position-r {
-  background-color: rgb(205, 2, 2);
-}
+
 .heart {
   position: absolute;
   background-color: rgb(245, 245, 245);

@@ -23,7 +23,7 @@
     <!-- Global and page-specific styles -->
     <link rel="stylesheet" href="../../assets/styles/global.css" />
     <link rel="stylesheet" href="../../assets/styles/index.css" />
-    <link rel="stylesheet" href="../../assets/styles/Home/Fashion-1.css" />
+    <link rel="stylesheet" href="../../assets/styles/user/MyAccount.css" />
   </head>
   <body>
     <!-- top header start -->
@@ -37,7 +37,7 @@
           style="font-family: 'Inter', serif; font-weight: 400; font-size: 12px"
         >
           Up to 40% off Best-Selling Furniture.
-          <a href="../../pages/Shop/ShopGrid.html" class="text-white">
+          <a href="../../ pages/Shop/ShopGrid.html" class="text-white">
             Shop Now</a
           >
         </h2>
@@ -150,15 +150,17 @@
       >
         <img class="col-5" src="../../assets/imgs/Home/logo.png" alt="" />
       </div>
-      <button
+           <button
         class="d-block col-1 d-flex flex-wrap border-0"
         style="background-color: #fff"
       >
-        <img
-          class="d-flex flex-wrap col-3"
-          src="../../assets/imgs/Home/user-avatar.png"
-          alt=""
-        />
+        <a href="../../pages/user/MyAccount.html">
+          <img
+            class="d-flex flex-wrap col-3"
+            src="../../assets/imgs/Home/user-avatar.png"
+            alt=""
+          />
+        </a>
       </button>
       <button
         class="col-1 d-flex flex-wrap border-0"
@@ -182,6 +184,86 @@
       </button>
     </header>
     <!-- header end  -->
+     <hr>
+    <!-- Login and Register start -->
+    <div
+      class="login-register-container d-flex flex-wrap justify-content-center align-items-center my-5"
+    >
+      <div
+        class="login-register-forms d-flex flex-wrap justify-content-center align-items-center"
+      >
+        <div class="login-form col-12 col-md-5 mb-4 mb-md-0">
+          <h2 class="text-center mb-4">Login</h2>
+          <form action="/login" method="post">
+            <div class="form-group mb-3">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                name="username"
+                required
+              />
+            </div>
+            <div class="form-group mb-3">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+          </form>
+        </div>
+        <div class="register-form col-12 col-md-5 ms-md-5">
+          <h2 class="text-center mb-4">Register</h2>
+          <form action="/register" method="post">
+            <div class="form-group mb-3">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                name="username"
+                required
+              />
+            </div>
+            <div class="form-group mb-3">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+                required
+              />
+            </div>
+            <div class="form-group mb-3">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="form-group mb-3">
+              <label for="phone">Phone</label>
+              <input type="tel" class="form-control" id="phone" name="phone" />
+            </div>
+            <button type="submit" class="btn btn-primary w-100">
+              Register
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Login and Register end -->
+     <hr>
     <!-- footer start -->
     <footer>
       <div class="container d-flex flex-column justify-content-between">
