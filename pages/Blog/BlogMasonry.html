@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Masonry</title>
+    <!-- Bootstrap CSS for styling -->
+    <!-- Fontawesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS for styling -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Animate.css for animations -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Global and page-specific styles -->
+    <link rel="stylesheet" href="../../assets/styles/global.css" />
+    <link rel="stylesheet" href="../../assets/styles/index.css" />
+    <link rel="stylesheet" href="../../assets/styles/Blog/BlogMasonry.css" />
+  </head>
+  <body>
+    <!-- top header start -->
+    <div
+      class="bg-black d-flex justify-content-between align-items-center text-white p-2"
+    >
+      <div class="header-text">
+        <h2 class="fs-6">
+          Up to 40% off Best-Selling Furniture.
+          <a href="../Shop/ShopGrid.html" class="text-white"> Shop Now</a>
+        </h2>
+      </div>
+      <div class="d-flex g-1">
+        <select id="myDropdown" class="bg-black border-black text-white-50">
+          <option value="option1">English</option>
+          <option value="option2">Arabic</option>
+          <option value="option2">French</option>
+        </select>
+        <select id="myDropdown" class="bg-black border-black text-white-50">
+          <option value="option1">USD</option>
+          <option value="option2">EUR</option>
+        </select>
+      </div>
+    </div>
+    <!-- top header end -->
+    <!-- Header section with navigation menu -->
+    <!-- header start  -->
+    <header
+      class="d-flex align-items-center gap-3 col-12 text-white p-3 container"
+    >
+      <!-- offcanvas start -->
+      <div>
+        <img
+          src="../../assets/imgs/Home/burger-bar.png"
+          width="30px"
+          class="d-block"
+          data-bs-toggle="offcanvas"
+          href="#offcanvasExample"
+          role="button"
+          aria-controls="offcanvasExample"
+          alt=""
+        />
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <nav class="d-flex flex-column align-items-center col-12 gap-3">
+            <!-- Navigation links -->
+            <a href="../../index.html">Home</a>
+            <a href="../../pages/Shop/ShopGrid.html">Shop</a>
+            <a href="../.../../pages/Product/Product-1.html">Product</a>
+            <a href="../../pages/Blog/BlogDefault.html">Blog </a>
+            <a href="../../pages/About/AboutUs.html">About Us</a>
+            <a href="../../pages/Contact/ContactUs.html">Contact Us</a>
+          </nav>
+        </div>
+      </div>
+      <!-- offcanvas end -->
+      <button
+        class="d-block col-1 d-flex flex-wrap border-0"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"
+        style="background-color: #fff"
+      >
+        <img
+          class="d-flex flex-wrap col-3"
+          src="../../assets/imgs/Home/search.png"
+          alt=""
+        />
+      </button>
+
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">
+            Search for products (0)
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search for products"
+            />
+            <span class="input-group-text">
+              <img
+                class="search-icon"
+                src="../../assets/imgs/Home/search.png"
+                alt="Search Icon"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+      <button
+        class="col-1 d-flex flex-wrap border-0"
+        style="background-color: #fff"
+      ></button>
+      <div
+        class="container d-flex flex-wrap justify-content-around align-text-center gap-2"
+      >
+        <img class="col-5" src="../../assets/imgs/Home/logo.png" alt="" />
+      </div>
+      <button
+        class="d-block col-1 d-flex flex-wrap border-0"
+        style="background-color: #fff"
+      >
+        <a href="../../pages/user/MyAccount.html">
+          <img
+            class="d-flex flex-wrap col-3"
+            src="../../assets/imgs/Home/user-avatar.png"
+            alt=""
+          />
+        </a>
+      </button>
+      <button
+        class="col-1 d-flex flex-wrap border-0"
+        style="background-color: #fff"
+      >
+        <img
+          class="d-flex flex-wrap col-3"
+          src="../../assets/imgs/Home/wishlist.png"
+          alt=""
+        />
+      </button>
+      <button
+        class="col-1 d-flex flex-wrap border-0"
+        style="background-color: #fff"
+      >
+        <img
+          class="col-3"
+          src="../../assets/imgs/Home/shopping-cart.png"
+          alt=""
+        />
+      </button>
+    </header>
+    <!-- header end  -->
+
+    <hr />
+    <!-- footer start -->
+    <footer>
+      <div class="container d-flex flex-column justify-content-between">
+        <div class="top d-flex flex-wrap justify-content-between">
+          <div class="one d-flex flex-column gap-3">
+            <img src="../../assets/imgs/logo.png" alt="logo" />
+            <p>Phone: +01101101101</p>
+            <p>Mon - Fri: 8 am - 8 pm</p>
+            <p>Sat - Sun: 8 am - 7 pm</p>
+          </div>
+          <div class="two d-flex flex-column gap-3">
+            <h4>ABOUT</h4>
+            <a href="../About/AboutUs.html">Our Story</a>
+            <a href="../About/AboutUs.html">Careers</a>
+            <a href="../About/AboutUs.html">Influencers</a>
+            <a href="../About/AboutUs.html">Join our team</a>
+          </div>
+          <div class="three d-flex flex-column gap-3">
+            <h4>CUSTOMER SERVICES</h4>
+            <a href="../Contact/ContactUs.html">Contact Us</a>
+            <a href="../Contact/ContactUs.html">Customer Service</a>
+            <a href="../Contact/ContactUs.html">Find Store</a>
+            <a href="../Contact/ContactUs.html">Book appointment</a>
+            <a href="../Contact/ContactUs.html">Shipping & Returns</a>
+          </div>
+          <div class="four d-flex flex-column gap-3">
+            <h4>SIGN UP FOR EMAILS</h4>
+            <p>
+              Enjoy 15% off* your first order when sign up to our newsletter
+            </p>
+            <div class="sub d-flex bg">
+              <input
+                class="input w-100"
+                type="text"
+                placeholder="Your e-mail address"
+              />
+              <button type="submit">SUBSCRIBE</button>
+            </div>
+            <div class="icons d-flex gap-2">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-pinterest"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="hr">
+            <hr />
+          </div>
+          <div class="info d-flex justify-content-between">
+            <div class="left d-flex gap-5">
+              <a href="../About/AboutUs.html">Privacy Policy</a>
+              <a href="../About/AboutUs.html">Help</a>
+              <a href="../About/AboutUs.html">FAQs</a>
+            </div>
+            <div class="center">
+              <p>komy, All Rights Reserved.</p>
+            </div>
+            <div class="right">
+              <img src="../../assets/imgs/Footer/payment.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer -->
+    <!-- Bootstrap JS for interactive components -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

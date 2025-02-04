@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+
+    <!-- Fontawesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS for styling -->
+    <!-- Fontawesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS for styling -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Animate.css for animations -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Global and page-specific styles -->
+    <link rel="stylesheet" href="./assets/styles/global.css" />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+  </head>
+  <body>
+    <!-- top header start -->
+    <div
+      class="bg-black d-flex justify-content-between align-items-center text-white p-2"
+      style="background-color: rgb(242 242 242); padding: 0 60px"
+    >
+      <div class="header-text d-flex gap-3 position-relative">
+        <h2
+          class="fs-6"
+          style="font-family: 'Inter', serif; font-weight: 400; font-size: 12px"
+        >
+          Up to 40% off Best-Selling Furniture.
+          <a href="./pages/Shop/ShopGrid.html" class="text-white"> Shop Now</a>
+        </h2>
+      </div>
+      <div class="d-flex g-1 d-lg-block d-none">
+        <select id="myDropdown" class="bg-black border-black text-white-50">
+          <option value="option1">English</option>
+          <option value="option2">Arabic</option>
+          <option value="option2">French</option>
+        </select>
+        <select id="myDropdown" class="bg-black border-black text-white-50">
+          <option value="option1">USD</option>
+          <option value="option2">EUR</option>
+        </select>
+      </div>
+    </div>
+    <!-- top header end -->
+    <!-- Header section with navigation menu -->
+    <!-- header start  -->
+    <header
+      class="d-flex align-items-center gap-3 col-12 text-white p-3 container"
+    >
+      <!-- offcanvas start -->
+      <div>
+        <img
+          src="./assets/imgs/Home/burger-bar.png"
+          width="30px"
+          class="d-block"
+          data-bs-toggle="offcanvas"
+          href="#offcanvasExample"
+          role="button"
+          aria-controls="offcanvasExample"
+          alt=""
+        />
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+          style="background-color: rgb(242 242 242)"
+        >
+          <nav class="d-flex flex-column align-items-center col-12 gap-3">
+            <!-- Navigation links -->
+            <a href="./index.html">Home</a>
+            <a href="./pages/Shop/ShopGrid.html">Shop</a>
+            <a href="./pages/Product/Product-1.html">Product</a>
+            <a href="./pages/Blog/BlogDefault.html">Blog </a>
+            <a href="./pages/About/AboutUs.html">About Us</a>
+            <a href="./pages/Contact/ContactUs.html">Contact Us</a>
+          </nav>
+        </div>
+      </div>
+      <!-- offcanvas end -->
+      <button
+        class="d-block col-1 d-flex flex-wrap border-0"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"
+        style="background-color: #fff"
+      >
+        <img
+          class="d-flex flex-wrap col-3"
+          src="./assets/imgs/Home/search.png"
+          alt=""
+        />
+      </button>
+
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+        style="background-color: rgb(242 242 242)"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">
+            Search for products (0)
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search for products"
+            />
+            <span class="input-group-text">
+              <img
+                class="search-icon"
+                src="./assets/imgs/Home/search.png"
+                alt="Search Icon"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+      <button
+        class="col-1 d-flex flex-wrap border-0"
+        style="background-color: #fff"
+      ></button>
+      <div
+        class="container d-flex flex-wrap justify-content-around align-text-center gap-2"
+      >
+        <img class="col-5" src="./assets/imgs/Home/logo.png" alt="" />
+      </div>
+      <button
+        class="d-block col-1 d-flex flex-wrap border-0"
+        style="background-color: #fff"
+      >
+        <a href="./pages/user/MyAccount.html">
+          <img
+            class="d-flex flex-wrap col-3"
+            src="./assets/imgs/Home/user-avatar.png"
+            alt=""
+          />
+        </a>
+      </button>
+      <button
+        class="col-1 d-flex flex-wrap border-0"
+        style="background-color: #fff"
+      >
+        <img
+          class="d-flex flex-wrap col-3"
+          src="./assets/imgs/Home/wishlist.png"
+          alt=""
+        />
+      </button>
+      <button
+        class="col-1 d-flex flex-wrap border-0"
+        style="background-color: #fff"
+      >
+        <img class="col-3" src="./assets/imgs/Home/shopping-cart.png" alt="" />
+      </button>
+    </header>
+    <!-- header end  -->
+    <hr />
+    <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div
+            class="container d-flex justify-content-between align-items-center"
+          >
+            <div class="col-4 d-flex flex-wrap align-text-bottom">
+              <p class="">NEW ARRIVALS</p>
+              <h1 class="ml9">
+                <span class="text-wrapper">
+                  <span class="letters">chair & seating you 'll love </span>
+                </span>
+                <br />
+                <span class="text-wrapper m19">
+                  <span class="letters"></span>
+                </span>
+              </h1>
+              <p>
+                designer chair style for every space -
+                <span class="text-black fw-bold fs-5"> free shipping</span>
+              </p>
+              <a
+                href="./pages/Shop/ShopGrid.html"
+                class="text-dark fw-bold fs-5"
+              >
+                Shop Now</a
+              >
+            </div>
+            <div class="d-block col-5">
+              <img
+                src="assets/imgs/Home/slide-1-home1-2.png"
+                class="d-block col-12"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div
+            class="container d-flex justify-content-between align-items-center"
+          >
+            <div class="col-5 d-flex flex-wrap align-text-bottom">
+              <div class="col-12 d-flex flex-wrap align-text-bottom">
+                <p class="">SALE OFF 30%</p>
+                <h1 class="ml9">
+                  <span class="text-wrapper">
+                    <span class="letters">Lamps & Lighting </span>
+                  </span>
+                  <br />
+                  <span class="text-wrapper m19">
+                    <span class="letters">Great Low Prices</span>
+                  </span>
+                </h1>
+                <p>
+                  Free Standerd Shipping
+                  <span class="text-black fw-bold fs-5"> with $35 </span>
+                </p>
+              </div>
+              <a
+                href="./pages/Shop/ShopGrid.html"
+                class="text-dark fw-bold fs-5"
+              >
+                Shop Now</a
+              >
+            </div>
+            <div class="d-block col-5">
+              <img
+                src="assets/imgs/Home/slide-2-home1-1.png"
+                class="d-block col-12"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div
+            class="container d-flex justify-content-between align-items-center"
+          >
+            <div class="col-5 d-flex flex-wrap align-text-bottom">
+              <div class="col-12 d-flex flex-wrap align-text-bottom">
+                <p class="">SALE OFF 25%</p>
+                <h1 class="ml9">
+                  <span class="text-wrapper">
+                    <span class="letters">Discover living Room Tables </span>
+                  </span>
+                  <br />
+                  <span class="text-wrapper m19">
+                    <span class="letters"></span>
+                  </span>
+                </h1>
+                <p>
+                  Free Standerd Shipping
+                  <span class="text-black fw-bold fs-5"> with $45 </span>
+                </p>
+              </div>
+              <a
+                href="./pages/Shop/ShopGrid.html"
+                class="text-dark fw-bold fs-5"
+              >
+                Shop Now</a
+              >
+            </div>
+            <div class="d-block col-8">
+              <img
+                src="assets/imgs/Home/slide-3-home1-1.png"
+                class="d-block col-12"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- shop by category -->
+    <div
+      class="shop-category d-flex flex-column justify-content-between col-10"
+    >
+      <div class="top">
+        <p>SHOP BY CATEGORY</p>
+      </div>
+
+      <div
+        id="categoryCarousel"
+        class="carousel slide"
+        data-ride="carousel"
+        data-interval="1000"
+        data-pause="hover"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div
+              class="d-flex justify-content-between algin-items-center gap-sm-2 flex-sm-wrap flex-lg-nowrap"
+            >
+              <div class="marquee-item">
+                <div class="col-lg-3 d-flex algin-items-center gap-4">
+                  <div class="link">
+                    <a href="./pages/Product/Product-1.html">
+                      <img src="./assets/imgs/Home/bed.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="text d-flex flex-column justify-content-center">
+                    <h6>Bed</h6>
+                    <p>7 Product</p>
+                  </div>
+                </div>
+              </div>
+              <div class="marquee-item">
+                <div class="col-lg-3 d-flex algin-items-center gap-4">
+                  <div class="link">
+                    <a href="./pages/Product/Product-1.html">
+                      <img src="./assets/imgs/Home/table.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="text d-flex flex-column justify-content-center">
+                    <h6>Table</h6>
+                    <p>5 Product</p>
+                  </div>
+                </div>
+              </div>
+              <div class="marquee-item">
+                <div class="col-lg-3 d-flex algin-items-center gap-4">
+                  <div class="link">
+                    <a href="./pages/Product/Product-1.html">
+                      <img src="./assets/imgs/Home/lamp-1.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="text d-flex flex-column justify-content-center">
+                    <h6>Lamp</h6>
+                    <p>7 Product</p>
+                  </div>
+                </div>
+              </div>
+              <div class="marquee-item">
+                <div class="col-lg-3 d-flex algin-items-center gap-4">
+                  <div class="link">
+                    <a href="./pages/Product/Product-1.html">
+                      <img src="./assets/imgs/Home/chair-1.jpg" alt="" />
+                    </a>
+                  </div>
+                  <div class="text d-flex flex-column justify-content-center">
+                    <h6>Chair</h6>
+                    <p>12 Product</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End ShopCategory -->
+
+    <!-- Services -->
+    <!-- <div class="services">
+      <div class="overlay"></div>
+      <img src="./assets/imgs/Home/news-1.jpg" alt="" />
+      <div class="boxes d-flex justify-content-center">
+        <div class="box">
+          <div class="image">
+            <div class="filter"></div>
+            <img src="./assets/imgs/Home/service-1.jpg" alt="" />
+          </div>
+          <div class="text d-flex flex-column">
+            <div class="icons d-flex gap-2">
+              <i class="fa-solid fa-arrow-up"></i>
+              <p>architecture</p>
+            </div>
+            <a href="./pages/Product/Product-1.html">read more</a>
+          </div>
+          <div
+            class="hidden-box d-sm-flex flex-column justify-content-center align-items-center gap-3"
+            style="height: 100%; width: 300px"
+          >
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <h6>architecture</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              accusamus laborum iure veniam adipisci impedit
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="filter"></div>
+            <img src="./assets/imgs/Home/service-2.jpg" alt="" />
+          </div>
+          <div class="text d-flex flex-column">
+            <div class="icons d-flex gap-2">
+              <i class="fa-solid fa-arrow-up"></i>
+              <p>architecture</p>
+            </div>
+            <a href="./pages/Product/Product-1.html">read more</a>
+          </div>
+          <div
+            class="hidden-box d-sm-flex flex-column justify-content-center align-items-center gap-3"
+            style="height: 100%; width: 300px"
+          >
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <h6>architecture</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              accusamus laborum iure veniam adipisci impedit
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="filter"></div>
+            <img src="./assets/imgs/Home/service-3.jpg" alt="" />
+          </div>
+          <div class="text d-flex flex-column">
+            <div class="icons d-flex gap-2">
+              <i class="fa-solid fa-arrow-up"></i>
+              <p>architecture</p>
+            </div>
+            <a href="./pages/Product/Product-1.html">read more</a>
+          </div>
+          <div
+            class="hidden-box d-sm-flex flex-column justify-content-center align-items-center gap-3"
+            style="height: 100%; width: 300px"
+          >
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <h6>architecture</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              accusamus laborum iure veniam adipisci impedit
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <div class="filter"></div>
+            <img src="./assets/imgs/Home/service-4.jpg" alt="" />
+          </div>
+          <div class="text d-flex flex-column">
+            <div class="icons d-flex gap-2">
+              <i class="fa-solid fa-arrow-up"></i>
+              <p>architecture</p>
+            </div>
+            <a href="./pages/Product/Product-1.html">read more</a>
+          </div>
+          <div
+            class="hidden-box d-sm-flex flex-column justify-content-center align-items-center gap-3"
+            style="height: 100%; width: 300px"
+          >
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <h6>architecture</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              accusamus laborum iure veniam adipisci impedit
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- End Services -->
+
+    <!-- Cabina -->
+    <div class="section-two d-flex justify-content-between gap-4 m-sm-5">
+      <div class="left col-lg-6 d-flex flex-column">
+        <div class="lamp h-50 d-flex flex-wrap">
+          <div class="text">
+            <p>Up To 40% Off <br />Top Lamp Brands</p>
+            <a href="./pages/Shop/ShopGrid.html">SHOP NOW</a>
+          </div>
+          <div class="links d-flex">
+            <img class="" src="./assets/imgs/Home/banner-0-.png" alt="" />
+          </div>
+        </div>
+        <div class="cabinets h-50 p-5">
+          <p>NEW PRODUCTS</p>
+          <h3>Up To 25% Off Cabinets</h3>
+          <a href="./pages/Shop/ShopGrid.html">SHOP NOW</a>
+        </div>
+      </div>
+      <div
+        class="right col-lg-6 d-flex justify-content-start text-center flex-column"
+      >
+        <div class="sale">
+          <p>BIG SALE</p>
+          <h2>Up to 70% Off <br />Furniture & Decor</h2>
+          <a href="./pages/Shop/ShopGrid.html">SHOP NOW</a>
+        </div>
+      </div>
+    </div>
+    <!-- End Cabina -->
+
+    <div class="canaba d-flex justify-content-between">
+      <div
+        class="text d-flex justify-content-center align-items-center gap-3 col-6"
+      >
+        <span>10%</span>
+        <div class="right">
+          <h2>Get More Pay Less</h2>
+          <p>On orders $500 + Use Coupon Code: <a> WSD10</a></p>
+        </div>
+      </div>
+      <div class="image col-6">
+        <img src="./assets/imgs/Home/banner-3.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Best Modern Furniture Section-4 start -->
+    <div class="section-four d-flex flex-wrap p-0 gap-5">
+      <div
+        class="top col-lg-12 d-flex justify-content-between align-items-center gap-2"
+      >
+        <div class="text col-lg-3 p-3 d-flex flex-column gap-3">
+          <p>
+            Best<br />
+            Modern<br />
+            Furniture
+          </p>
+          <a href="./pages/Product/Product-1.html">See All >></a>
+        </div>
+        <div class="product col-lg-3">
+          <div>
+            <img
+              class="hover-image-1"
+              src="./assets/imgs/Home/Product 1.jpg"
+              alt=""
+            />
+            <button>select options</button>
+            <div class="icons">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-code-compare"></i>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <a href="./pages/Product/Product-1.html"
+            ><p>Wood Outdoor Adirondack Chair</p></a
+          >
+          <div class="price d-flex gap-3">
+            <span>$1,009</span>
+            <del>$1,259</del>
+          </div>
+          <div class="position-r px-2">hot</div>
+          <div class="pt px-2 bg-black">sale</div>
+          <div class="heart"><i class="fa-regular fa-heart"></i></div>
+        </div>
+        <div class="product col-lg-3">
+          <div>
+            <img
+              class="hover-image-2"
+              src="./assets/imgs/Home/Product 2.jpg"
+              alt=""
+            />
+            <button>select options</button>
+            <div class="icons">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-code-compare"></i>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <a href="./pages/Product/Product-1.html"
+            ><p>Solid Wood Bar Storage Cabinet</p></a
+          >
+          <div class="price">
+            <span>$1,899</span>
+          </div>
+          <div class="heart"><i class="fa-regular fa-heart"></i></div>
+        </div>
+        <div class="product col-lg-3">
+          <div>
+            <img
+              class="hover-image-3"
+              src="./assets/imgs/Home/bed.jpg"
+              alt=""
+            />
+            <button>select options</button>
+            <div class="icons">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-code-compare"></i>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <a href="./pages/Product/Product-1.html"
+            ><p>Solid Wood Bed With Fabric Headboard</p></a
+          >
+          <div class="price">
+            <span>$3,707 – $5,707</span>
+          </div>
+          <div class="heart"><i class="fa-regular fa-heart"></i></div>
+        </div>
+      </div>
+      <!-- bottom -->
+      <div
+        class="bottom col-lg-12 d-flex justify-content-between align-items-center gap-2"
+      >
+        <div class="product col-lg-3">
+          <div>
+            <img
+              class="hover-image-4"
+              src="./assets/imgs/Home/Product 4.jpg"
+              alt=""
+            />
+            <button>select options</button>
+            <div class="icons">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-code-compare"></i>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <a href="./pages/Product/Product-1.html"
+            ><p>Floor Lamp With Polyester Shade</p></a
+          >
+          <div class="price">
+            <span>$399</span>
+          </div>
+          <div class="position px-1">sold out</div>
+          <div class="heart"><i class="fa-regular fa-heart"></i></div>
+        </div>
+        <div class="product col-lg-3">
+          <div>
+            <img
+              class="hover-image-5"
+              src="./assets/imgs/Home/Product 5.jpg"
+              alt=""
+            />
+            <button>select options</button>
+            <div class="icons">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-code-compare"></i>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <a href="./pages/Product/Product-1.html"
+            ><p>Garden Chair With Armrests</p></a
+          >
+          <div class="price">
+            <span>$1,009</span>
+          </div>
+          <div class="position-r px-2">hot</div>
+          <div class="heart"><i class="fa-regular fa-heart"></i></div>
+        </div>
+        <div class="product col-lg-3">
+          <div>
+            <img
+              class="hover-image-6"
+              src="./assets/imgs/Home/Product 6.jpg"
+              alt=""
+            />
+            <button>select options</button>
+            <div class="icons">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-code-compare"></i>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <a href="./pages/Product/Product-1.html"
+            ><p>Led Steel Floor Lamp</p></a
+          >
+          <div class="price d-flex gap-3">
+            <span>$299</span>
+            <del>$420</del>
+          </div>
+          <div class="position px-2 bg-black">sale</div>
+          <div class="heart"><i class="fa-regular fa-heart"></i></div>
+        </div>
+        <div class="product col-lg-3">
+          <div>
+            <img
+              class="hover-image-7"
+              src="./assets/imgs/Home/Product 7.jpg"
+              alt=""
+            />
+            <button>select options</button>
+            <div class="icons">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-code-compare"></i>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <a href="./pages/Product/Product-1.html"
+            ><p>Teak Garden Chair With Armrests</p></a
+          >
+          <div class="price">
+            <span>$999</span>
+          </div>
+          <div class="heart"><i class="fa-regular fa-heart"></i></div>
+        </div>
+      </div>
+    </div>
+    <!-- Best Modern Furniture End -->
+    <!-- Start Blog -->
+    <div class="blog">
+      <p>our blog</p>
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active d-flex justify-content-between gap-5"
+          >
+            <div class="blog-left col-lg-6">
+              <img
+                src="./assets/imgs/Home/blog-1-1174x862.jpg"
+                class="w-100"
+                lt="..."
+              />
+            </div>
+            <div
+              class="blog-center d-flex flex-column justify-content-center gap-2 col-lg-3"
+            >
+              <div class="links">
+                <a href="./pages/Blog/BlogDefault.html">furniture,</a>
+                <a href="./pages/Blog/BlogDefault.html">table</a>
+              </div>
+              <h2>
+                <a href="./pages/Blog/BlogDefault.html"
+                  >The Secrets to a Living Room that Draws You In</a
+                >
+              </h2>
+              <p>
+                Nunc ut sem ut ex sollicitudin commodo Suspendisse non enim
+                feils. Nam nec diam ultricies, malesuada
+              </p>
+              <a href="./pages/Blog/BlogDefault.html">READ MORE</a>
+            </div>
+            <div class="blog-right col-lg-3">
+              <img
+                src="./assets/imgs/Home/blog-2-1174x862.jpg"
+                class="w-100"
+                style="height: 100%"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="carousel-item d-flex justify-content-between gap-5">
+            <div class="blog-left col-lg-6">
+              <img
+                src="./assets/imgs/Home/blog-2-1174x862.jpg"
+                class="w-100"
+                alt="..."
+              />
+            </div>
+            <div
+              class="blog-center d-flex flex-column justify-content-center gap-2 col-lg-3"
+            >
+              <div class="links">
+                <a href="./pages/Blog/BlogDefault.html">furniture,</a>
+                <a href="./pages/Blog/BlogDefault.html">table</a>
+              </div>
+              <h2>
+                <a href="./pages/Blog/BlogDefault.html"
+                  >The Secrets to a Living Room that Draws You In</a
+                >
+              </h2>
+              <p>
+                Nunc ut sem ut ex sollicitudin commodo Suspendisse non enim
+                feils. Nam nec diam ultricies, malesuada
+              </p>
+              <a href="./pages/Blog/BlogDefault.html">READ MORE</a>
+            </div>
+            <div class="blog-right col-lg-3">
+              <img
+                src="./assets/imgs/Home/blog-1-1174x862.jpg"
+                class="w-100"
+                style="height: 100%"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- End Blog -->
+    <!-- section-video start -->
+    <div class="section-video mb-5">
+      <video
+        class="elementor-background-video-hosted elementor-html5-video"
+        autoplay=""
+        muted=""
+        playsinline=""
+        loop=""
+        src="./assets/imgs/Home/Pexels-Karolina-Grabowska-7708902-4096X2160-25Fps.mp4"
+      ></video>
+      <div class="overlay"></div>
+      <div class="text">
+        <p>wood</p>
+      </div>
+    </div>
+    <!-- section-video end -->
+
+    <!-- footer start -->
+    <hr />
+    <footer>
+      <div class="container d-flex flex-column justify-content-between">
+        <div class="top d-flex flex-wrap justify-content-between">
+          <div class="one d-flex flex-column gap-3">
+            <img src="./assets/imgs/logo.png" alt="logo" />
+            <p>Phone: +01101101101</p>
+            <p>Mon - Fri: 8 am - 8 pm</p>
+            <p>Sat - Sun: 8 am - 7 pm</p>
+          </div>
+          <div class="two d-flex flex-column gap-3">
+            <h4>ABOUT</h4>
+            <a href="./pages/About/AboutUs.html">Our Story</a>
+            <a href="./pages/About/AboutUs.html">Careers</a>
+            <a href="./pages/About/AboutUs.html">Influencers</a>
+            <a href="./pages/About/AboutUs.html">Join our team</a>
+          </div>
+          <div class="three d-flex flex-column gap-3">
+            <h4>CUSTOMER SERVICES</h4>
+            <a href="./pages/Contact/ContactUs.html">Contact Us</a>
+            <a href="./pages/Contact/ContactUs.html">Customer Service</a>
+            <a href="./pages/Contact/ContactUs.html">Find Store</a>
+            <a href="./pages/Contact/ContactUs.html">Book appointment</a>
+            <a href="./pages/Contact/ContactUs.html">Shipping & Returns</a>
+          </div>
+          <div class="four d-flex flex-column gap-3">
+            <h4>SIGN UP FOR EMAILS</h4>
+            <p>
+              Enjoy 15% off* your first order when sign up to our newsletter
+            </p>
+            <div class="sub d-flex bg">
+              <input
+                class="input w-100"
+                type="text"
+                placeholder="Your e-mail address"
+              />
+              <button type="submit">SUBSCRIBE</button>
+            </div>
+            <div class="icons d-flex gap-2">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-pinterest"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="hr">
+            <hr />
+          </div>
+          <div class="info d-flex justify-content-between">
+            <div class="left d-flex gap-5">
+              <a href="./pages/About/AboutUs.html">Privacy Policy</a>
+              <a href="./pages/About/AboutUs.html">Help</a>
+              <a href="./pages/About/AboutUs.html">FAQs</a>
+            </div>
+            <div class="center">
+              <p>komy, All Rights Reserved.</p>
+            </div>
+            <div class="right">
+              <img src="./assets/imgs/Footer/payment.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer -->
+    <!-- animation text -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- js -->
+    <script src="./assets/"></script>
+    <script src="./assets/js/product.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+      // Wrap every letter in a span
+      var textWrapper = document.querySelector(".ml9 .letters");
+      textWrapper.innerHTML = textWrapper.textContent.replace(
+        /\S/g,
+        "<span class='letter'>$&</span>"
+      );
+
+      anime
+        .timeline({ loop: true })
+        .add({
+          targets: ".ml9 .letter",
+          scale: [0, 1],
+          duration: 1500,
+          elasticity: 600,
+          delay: (el, i) => 45 * (i + 1),
+        })
+        .add({
+          targets: ".ml9",
+          opacity: 0,
+          duration: 1000,
+          easing: "easeOutExpo",
+          delay: 1000,
+        });
+    </script>
+  </body>
+</html>
